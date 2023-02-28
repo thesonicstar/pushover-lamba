@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  sendAlertToPushoverv2:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12.x
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 3
+      Role: >-
+        arn:aws:iam::559468435584:role/service-role/sendAlertToPushoverv2-role-rbgv8njf
+      Environment:
+        Variables:
+          PUSHOVER_TOKEN: amwi2qymxzetx45kiwh8138jjeusx6
+          PUSHOVER_USER: uxotm74t6syz5wh4u9ypa9nqp6p6n1
+      RuntimePolicy:
+        UpdateRuntimeOn: Auto

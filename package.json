@@ -1,0 +1,17 @@
+{
+  "name": "pushover-notifications",
+  "version": "1.0.0",
+  "description": "lamba pushover notification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pushover"
+  ],
+  "author": "emmanuel",
+  "license": "ISC",
+  "dependencies": {
+    "pushover-notifications": "^1.2.2"
+  }
+}
